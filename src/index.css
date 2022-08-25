@@ -5,10 +5,74 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+#container {
+  width: 400px;
+  background: aliceblue;
+  padding: 20px;
+}
+input {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.list {
+  margin: 15px 0;
+}
+.list > li {
+  background: antiquewhite;
+  padding: 5px;
+  margin-bottom: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 0;
+}
+.btn > button {
+  padding: 5px;
+  width: 60px;
+}
+.deleteBtn {
+  width: 18px;
+  height: 20px;
+  padding: 5px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+.deleteAllBtn {
+  font-size: 12px;
+  cursor: pointer;
+  text-align: right;
+}
+.deleteAllBtn:hover {
+  text-decoration: underline;
+}
+.edit span {
+  margin-left: 10px;
+  font-size: 12px;
+  cursor: pointer;
 }
